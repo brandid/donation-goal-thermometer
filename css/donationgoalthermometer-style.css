@@ -1,0 +1,75 @@
+/* DONATION GOAL THERMOMETER CUSTOM STYLES
+----------------------------------------------------------------------------- */
+.donation-goal-thermometer {
+	position: relative;
+	margin-bottom: 1em;
+	padding-bottom: 0.25em;
+	overflow: hidden;
+}
+
+.donation-goal-thermometer .thermometer-outer {
+	background: #c4f0ff;
+	border: 1px solid #c4c4c4;
+	border-radius: 3px;
+}
+
+.donation-goal-thermometer .thermometer-outer-h {
+	height: 20px;
+	width: 100%;
+}
+
+.donation-goal-thermometer .thermometer-outer-v {
+	height: 200px;
+	width: 20px;
+}
+
+.donation-goal-thermometer .thermometer-inner {
+	background: #3f83f7;
+}
+
+.donation-goal-thermometer .thermometer-inner-h {
+	height: 20px;
+}
+
+.donation-goal-thermometer span.donated {
+	display: block;
+    font-size: 12px;
+}
+
+.donation-goal-thermometer.vertical {
+	height: 200px;
+}
+
+.donation-goal-thermometer .meter {
+	overflow: hidden;
+}
+
+.donation-goal-thermometer.vertical .meter {
+	display: inline-block;
+}
+
+.donation-goal-thermometer.vertical .meter .thermometer-inner-v {
+	width: 100%;
+}
+
+.donation-goal-thermometer.vertical .vertical-donated-count {
+	height: 200px;
+    display: inline-block;
+    width: auto;
+    position: absolute;
+    left: 25px;
+    min-width: 200px;
+    bottom: 0;
+	opacity: 0;
+	transition: all .2s ease-in-out;
+}
+
+.donation-goal-thermometer.vertical span.donated {
+	display: inline-block;
+}
+
+.donation-goal-thermometer .meter .thermometer-inner span.donated {
+    text-align: right;
+    padding-right: 10px;
+	color: #fff;
+}
