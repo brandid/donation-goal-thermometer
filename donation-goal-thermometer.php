@@ -3,7 +3,7 @@
 Plugin Name: Donation Goal Thermometer
 Plugin URI:
 Description: Display a thermometer chart for donation goals, with an easy to use shortcode.
-Version: 0.0.1
+Version: 0.0.2
 Author: brandiD
 Author URI: https://thebrandiD.com
 Text Domain: donationgoalthermometer
@@ -14,10 +14,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Define Constants.
-define( 'DGTHERMOMETER_PLUGIN_VERSION', '0.0.1');
+define( 'DGTHERMOMETER_PLUGIN_VERSION', '0.0.2');
 
+// Load plugin functions.
 require_once plugin_dir_path( __FILE__ ) . 'donationgoalthermometer-functions.php';
 
+// Add action to enqueue required files.
 add_action( 'wp_enqueue_scripts', 'donation_goal_thermometer_load_scripts' );
 
 /**

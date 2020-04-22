@@ -7,12 +7,13 @@
 
         /* Get data vars */
         var donated = $(the_meter).data('donated');
+        var donated_str = Number(donated).toLocaleString('en');
         var goal = $(the_meter).data('goal');
 
         /* Create thermometer. */
         $(the_meter).thermometer();
 
-        function heightResize() {
+        function vertical_meter_label_height_resize() {
             var meter_height = $('.donation-goal-thermometer.vertical .thermometer-inner-v').outerHeight();
             var counter_height = $('.donation-goal-thermometer.vertical .vertical-donated-count').outerHeight();
             if ( counter_height !== meter_height ){
@@ -22,10 +23,10 @@
 
         /* Add text inside the thermometer. */
         if ( $(the_el).hasClass( "vertical" ) ) {
-            $('.donation-goal-thermometer.vertical .meter').append('<div class="vertical-donated-count"><span class="donated">$'+donated+'</span></div>');
-            setTimeout(heightResize, 1000);
+            $('.donation-goal-thermometer.vertical .meter').append('<div class="vertical-donated-count"><span class="donated">$'+donated_str+'</span></div>');
+            setTimeout(vertical_meter_label_height_resize, 1000);
         } else {
-            $('.donation-goal-thermometer .thermometer-inner').prepend('<span class="donated">$'+donated+'</span>');
+            $('.donation-goal-thermometer .thermometer-inner').prepend('<span class="donated">$'+donated_str+'</span>');
         }
 
 
