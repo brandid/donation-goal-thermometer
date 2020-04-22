@@ -6,8 +6,14 @@
 function dgthermometer_shortcode( $atts = array() ) {
 
 	// Get atts and assign vars.
-	$donated_total = $atts['donated'];
-	$goal_total    = $atts['goal'];
+	$donated_total = '';
+	if ( ! empty( $atts['donated'] ) ) {
+		$donated_total = $atts['donated'];
+	}
+	$goal_total = '';
+	if ( ! empty( $atts['goal'] ) ) {
+		$goal_total = $atts['goal'];
+	}
 	$data_pct      = ( floatval( $donated_total ) / floatval( $goal_total ) ) * 100;
 	// Round pct to 2 decimal places.
 	$data_pct      = number_format( $data_pct, 2, '.', '' );

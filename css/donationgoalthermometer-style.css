@@ -16,11 +16,13 @@
 .donation-goal-thermometer .thermometer-outer-h {
 	height: 20px;
 	width: 100%;
+	overflow: hidden;
 }
 
 .donation-goal-thermometer .thermometer-outer-v {
 	height: 200px;
 	width: 20px;
+	overflow: hidden;
 }
 
 .donation-goal-thermometer .thermometer-inner {
