@@ -10,11 +10,7 @@ Version: 0.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Course Maker Modules adds a Custom Post Type called "Modules" for you to use as Course content on any Genesis HTML5 theme. Designed for the Course Maker theme by brandiD. Based on the "Genesis Portfolio Pro" plugin by StudioPress.
-
-== Description ==
-
-Donation Goal Thermometer - display a thermometer chart for donation goals with an easy to use shortcode.
+Display an animated horizontal or vertical meter of donation goals with an easy to configure shortcode.
 
 == Installation ==
 
@@ -26,6 +22,9 @@ None yet!
 
 
 == Changelog ==
+
+= 0.0.2 - (Apr 22, 2020) =
+* Enhancement: Updates Donation total to include commas
 
 = 0.0.1 - (Apr 21, 2020) =
 * First release. Hello, World!
